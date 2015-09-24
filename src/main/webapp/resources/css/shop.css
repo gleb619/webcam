@@ -1,0 +1,214 @@
+@CHARSET "UTF-8";
+
+.header-image {
+	position: absolute;
+}
+
+.ribbon {
+	/* 
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,0.25);
+    float: left;
+    height: 220px;
+    margin: 50px 0 0 45px;
+    position: relative;
+    text-align: center;
+    width: 210px;
+     */
+}
+
+.ribbon .folded-container {
+    background: #e51c23;
+    background-image: radial-gradient(transparent 30%, rgba(0, 0, 0, 0.2));
+    border: 0 solid rgba(0,0,0,0.2);
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.ribbon .folded:before, .ribbon .folded:after {
+    bottom: 26px;
+    /* box-shadow: 0 28px 8px rgba(0,0,0,0.5); */
+    content: "";
+    height: 28px;
+    position: absolute;
+    width: 48%;
+    z-index: -1;
+}
+.ribbon .folded:before {
+    left: 2%;
+    transform: rotate(-3deg);
+}
+.ribbon .folded:after {
+    right: 2%;
+    transform: rotate(3deg);
+}
+.ribbon .folded .folded-container {
+    border-width: 1px 1px 2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    margin: 0;
+    padding: 4px 40px;
+    position: absolute;
+    right: 0px;
+    top: 12px;
+}
+.ribbon .folded .folded-container:after {
+    border-width: 7px;
+    border-style: solid;
+    border-color: #134 transparent transparent #134;
+    bottom: -15px;
+    content: "";
+    position: absolute;
+    right: -1px;
+}
+
+
+/* #--------------------------------- */
+
+/*!
+ * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    text-align: center;
+    /* 
+    color: #fff;
+    background: url(../images/bg2.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    */
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 500px;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0 {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0 {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.content-section-back {
+	/* padding-top: 100px; */
+	margin-left: 20px;
+	margin-right: 20px;
+	min-height: 100px;
+}
+
+.content-section {
+	/* padding-top: 100px; */
+	margin-left: 20px;
+	margin-right: 20px;
+	min-height: 400px;
+}
+
+@media(min-width:767px) {
+    .content-section {
+        /* padding-top: 250px; */
+    }
+}

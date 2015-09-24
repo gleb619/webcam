@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+
+#wrapper {
+    padding-left: 60px;
+    /* 
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    */
+}
+
+#wrapper.toggled {
+    padding-left: 330px;
+}
+/* menu-bar */
+.sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 330px;
+    width: 60px;
+    height: 100%;
+    margin-left: -330px;
+    overflow-y: auto;
+    /* background: rgba(230,230,230,0.7); */
+    /* 
+    -webkit-transition: all 0.2s ease;
+	   -moz-transition: all 0.2s ease;
+	     -o-transition: all 0.2s ease;
+	    	transition: all 0.2s ease;
+	*/
+    overflow-x: hidden;  
+}
+
+#menu-toggle-label{
+	display: none;
+}
+
+#wrapper.toggled #menu-toggle-label {
+    display: inline;
+}
+
+#wrapper.toggled #scrollToTopBtn {
+    display: none;
+}
+
+#wrapper #scrollToTopBtn {
+	display: block;
+	position: fixed;
+    bottom: 50px;
+}
+
+#wrapper.toggled #menu-toggle {
+    width: 330px;
+}
+
+#wrapper.toggled .sidebar-wrapper {
+    width: 330px;
+    background-color: #4e5d6c;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 5px 10px 15px 10px;
+    /* background-color: #ffffff; */
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -330px;
+}
+
+.menu-bar {
+    display: none;
+}
+
+#wrapper.toggled .menu-bar {
+	display: block;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 330px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    /* background: rgba(242,242,242,0.2); */
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    /* background: none; */
+}

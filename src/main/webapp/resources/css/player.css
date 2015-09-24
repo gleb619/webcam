@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+/* 
+.panel-body {
+	position: relative;
+}
+*/
+.player.ng-enter, .player.ng-leave {
+	-webkit-transition: 0.5s linear all;
+	-moz-transition: 0.5s linear all;
+	-o-transition: 0.5s linear all;
+	transition: 0.5s linear all;
+	position: absolute;
+}
+
+.player.ng-enter {
+	/* left: 100%; */
+	top: -100%;
+}
+
+.player.ng-leave,
+.player.ng-enter.ng-enter-active {
+	/* left: 0; */
+	top: 0; 
+}
+
+.player.ng-leave.ng-leave-active {
+	/* left: -100%; */
+	top: 0;
+}
+/* 
+.panel {
+	overflow: hidden;
+}
+*/
